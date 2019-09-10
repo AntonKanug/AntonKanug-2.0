@@ -1,0 +1,117 @@
+body
+{
+  background-image: url(file:///Users/antonperera/Desktop/sliear6.jpg);
+  background-size: cover;
+  margin: auto;
+}
+
+/*Font*/
+@font-face
+{
+  src: url(fonts/SF-Pro-Display-Bold.otf);
+  font-family: SFPro;
+}
+
+
+nav{
+background-color: #000;
+}
+
+/*Name in the intro page*/
+.name
+{
+  font-family: SFPro;
+  color: #fff;
+  font-size: 33px;
+  font-weight: 400;
+  top: 20%;
+  left:20%;
+  position: absolute;
+}
+
+/*Personal description*/
+.bio
+{
+  font-family: SFPro;
+  color: #cbd9f2;
+  font-weight: 400;
+  top: 29.7%;
+  left:22%;
+  position: absolute;
+}
+
+/*Logo of Ant*/
+.antlogo
+{
+  position: fixed;
+  top:3.5%;
+  right:10%;
+}
+
+/*Navigation menu*/
+.main_menu
+{
+   padding:  18px 0 18px 0;
+   position: fixed;
+   left: 10%;
+   top: 1.8%;
+}
+
+/*Navigation menu line*/
+.main_menu li
+{
+  padding: 0 7px 0 7px;
+  font-size: 16px;
+}
+
+/*Navigation menu links*/
+.main_menu a
+{
+  color: #fff;
+  text-decoration: none;
+  padding: 8px;
+}
+
+/*Navigation menu hover effect*/
+.main_menu a:hover
+{
+color: #000;
+}
+
+/*Contact in mav menu*/
+.contact
+{
+  float
+   padding:  18px 0 18px 0;
+   position: fixed;
+   right: 12.5%;
+}
+
+.contact li
+{
+  padding: 0 7px 0 7px;
+  font-size: 16px;
+}
+
+.contact a
+{
+  color: #fff;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.contact a:hover
+{
+color: #000;
+}
+
+.container
+{
+  background-color: #000;
+}
+
+nav ul li
+{
+  font-family: SFPro;
+  display: inline-block;
+  l
