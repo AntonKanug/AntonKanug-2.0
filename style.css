@@ -12,6 +12,16 @@ body
 }
 @font-face
 {
+  src: url(fonts/SF-Pro-Display-Regular.otf);
+  font-family: SFProR;
+}
+@font-face
+{
+  src: url(fonts/SF-Pro-Display-Medium.otf);
+  font-family: SFProM;
+}
+@font-face
+{
   src: url(fonts/SF-Pro-Display-Heavy.otf);
   font-family: SFProH;
 }
@@ -31,12 +41,17 @@ nav{
 background-color: #000;
 }
 
+.container{
+  background-color: #000;
+}
+
+
 /*Name in the intro page*/
 .name
 {
   font-family: SFPro;
   color: rgb(43,50,103);
-  font-size: 45px;
+  font-size: 53px;
   font-weight: 900;
   margin-top: -6px
 }
@@ -44,128 +59,94 @@ background-color: #000;
 /*Personal description*/
 .bio
 {
-  font-family: SFProL;
+  font-family: SFProR;
   color: rgb(75, 99, 187);
   font-weight: 400;
-  font-size: 19px
+  font-size: 18px;
 }
 
 /*Logo of Ant*/
-.antlogo
-{
+.antlogo{
   position: fixed;
-  top:3.5%;
   right:10%;
+  margin-top: 26px
 }
 
 /*Navigation menu*/
-.main_menu
-{
+.main_menu {
    margin:  18px 0 18px 0;
    position: fixed;
    left: 10%;
-   top: 1.8%;
 }
 
 /*Navigation menu line*/
-.main_menu li
-{
+.main_menu li {
   padding: 0px;
   font-size: 16px;
 }
 
 /*Navigation menu links*/
-.main_menu a
-{
+.main_menu a {
   color: rgb(43,50,103);
   text-decoration: none;
   padding-bottom: 8px;
-  transition: 0.2s
+  transition: 0.2s;
+  font-family: SFPro;
+  font-size: 15px;
 }
 
 /*Navigation menu hover effect*/
-
-
-/*Contact in mav menu*/
-.contact
-{
-   padding:  18px 0 18px 0;
-   position: fixed;
-   right: 12.5%;
-}
-
-.contact li
-{
-  padding: 0 7px 0 7px;
-  font-size: 16px;
-}
-
-.contact a
-{
-  color: #fff;
-  text-decoration: none;
-  padding: 8px;
-}
-
-.contact a:hover
-{
-  color: rgb(75, 99, 187);
-}
-
-.container
-{
-  background-color: #000;
-}
-
 nav ul li
 {
   font-family: SFPro;
   display: inline-block;
 }
 
-
-.snip1135 {
+.main_menu {
   color: rgb(43,50,103);
   text-decoration: none;
   transition: 0.2s;
+  background:rgb(248, 247, 247);
+  padding: 9px;
+  border-radius: 10px;
 }
-.snip1135 * {
+.main_menu * {
   box-sizing: border-box;
   text-decoration: none;
 }
-.snip1135 li {
+.main_menu li {
   display: inline-block;
   list-style: outside none none;
   margin: 0 1.5em;
   padding: 0;
   text-decoration: none;
 }
-.snip1135 a {
+.main_menu a {
   padding: 0.5em 0;
   color: rgb(43,50,103);
   position: relative;
   text-decoration: none;
-  
-}.snip1135 a:hover {
+}
+.main_menu a:hover {
   text-decoration: none;
 }
-.snip1135 a:before,
-.snip1135 a:after {
+.main_menu a:before,
+.main_menu a:after {
   position: absolute;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
   text-decoration: none
 }
-.snip1135 a:before {
+.main_menu a:before {
   bottom: 0;
   display: block;
   height: 3px;
   width: 0%;
   content: "";
-  background-color: #2980b9;
+  background-color:  rgb(63, 88, 177);
   text-decoration: none;
 }
-.snip1135 a:after {
+.main_menu a:after {
   left: 0;
   top: 0;
   padding: 0.5em 0;
@@ -177,21 +158,32 @@ nav ul li
   overflow: hidden;
   text-decoration: none;
 }
-.snip1135 a:hover:before,
-.snip1135 .current a:before {
+.main_menu a:hover:before,
+.main_menu .current a:before {
   opacity: 1;
   width: 100%;
 }
-.snip1135 a:hover:after,
-.snip1135 .current a:after {
+.main_menu a:hover:after,
+.main_menu .current a:after {
   max-width: 100%;
 }
 
+.main_menu a:hover
+{
+  color: rgb(63, 88, 177);
+}
 
 
+@media (max-width:768px){
+  #nav-bar{
+    display: none
+  }
+}
 .social-media-icon{
   transition: 0.3s;
 }
 .social-media-icon:hover{
   transform: scale(1.25);
 }
+
+
