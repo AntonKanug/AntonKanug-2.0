@@ -10,6 +10,21 @@ body
   src: url(fonts/SF-Pro-Display-Bold.otf);
   font-family: SFPro;
 }
+@font-face
+{
+  src: url(fonts/SF-Pro-Display-Heavy.otf);
+  font-family: SFProH;
+}
+@font-face
+{
+  src: url(fonts/SF-Pro-Display-Light.otf);
+  font-family: SFProL;
+}
+@font-face
+{
+  src: url(fonts/SF-Pro-Display-Black.otf);
+  font-family: SFProBl;
+}
 
 
 nav{
@@ -21,16 +36,18 @@ background-color: #000;
 {
   font-family: SFPro;
   color: rgb(43,50,103);
-  font-size: 55px;
+  font-size: 60px;
   font-weight: 900;
+  margin-top: -6px
 }
 
 /*Personal description*/
 .bio
 {
-  font-family: SFPro;
+  font-family: SFProL;
   color: rgb(97,120,201);
   font-weight: 400;
+  font-size: 19px
 }
 
 /*Logo of Ant*/
