@@ -36,7 +36,7 @@ background-color: #000;
 {
   font-family: SFPro;
   color: rgb(43,50,103);
-  font-size: 60px;
+  font-size: 45px;
   font-weight: 900;
   margin-top: -6px
 }
@@ -45,7 +45,7 @@ background-color: #000;
 .bio
 {
   font-family: SFProL;
-  color: rgb(97,120,201);
+  color: rgb(75, 99, 187);
   font-weight: 400;
   font-size: 19px
 }
@@ -61,7 +61,7 @@ background-color: #000;
 /*Navigation menu*/
 .main_menu
 {
-   padding:  18px 0 18px 0;
+   margin:  18px 0 18px 0;
    position: fixed;
    left: 10%;
    top: 1.8%;
@@ -70,7 +70,7 @@ background-color: #000;
 /*Navigation menu line*/
 .main_menu li
 {
-  padding: 0 7px 0 7px;
+  padding: 0px;
   font-size: 16px;
 }
 
@@ -79,14 +79,12 @@ background-color: #000;
 {
   color: rgb(43,50,103);
   text-decoration: none;
-  padding: 8px;
+  padding-bottom: 8px;
+  transition: 0.2s
 }
 
 /*Navigation menu hover effect*/
-.main_menu a:hover
-{
-color: #000;
-}
+
 
 /*Contact in mav menu*/
 .contact
@@ -111,7 +109,7 @@ color: #000;
 
 .contact a:hover
 {
-color: #000;
+  color: rgb(75, 99, 187);
 }
 
 .container
@@ -123,4 +121,77 @@ nav ul li
 {
   font-family: SFPro;
   display: inline-block;
+}
+
+
+.snip1135 {
+  color: rgb(43,50,103);
+  text-decoration: none;
+  transition: 0.2s;
+}
+.snip1135 * {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.snip1135 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1.5em;
+  padding: 0;
+  text-decoration: none;
+}
+.snip1135 a {
+  padding: 0.5em 0;
+  color: rgb(43,50,103);
+  position: relative;
+  text-decoration: none;
+  
+}.snip1135 a:hover {
+  text-decoration: none;
+}
+.snip1135 a:before,
+.snip1135 a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  text-decoration: none
+}
+.snip1135 a:before {
+  bottom: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #2980b9;
+  text-decoration: none;
+}
+.snip1135 a:after {
+  left: 0;
+  top: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+  text-decoration: none;
+}
+.snip1135 a:hover:before,
+.snip1135 .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+.snip1135 a:hover:after,
+.snip1135 .current a:after {
+  max-width: 100%;
+}
+
+
+
+.social-media-icon{
+  transition: 0.3s;
+}
+.social-media-icon:hover{
+  transform: scale(1.25);
 }
