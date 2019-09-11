@@ -38,8 +38,10 @@
    </nav>
      <!--Ant logo-->
      <nav>
+      </div>
       <!--Navigation menu line and links-->
-        <ul class="main_menu main_menu-MOB" style="padding-left: 0px; text-decoration: none; margin-left: -5px; left: 8%; margin-top: 5px">
+      <div id="navbarM" class="container main_menu1"  style="position: fixed; transition: top 0.5s; margin-top: 15px; z-index: 1; ">
+        <ul class="main_menu main_menu-MOB" style="padding-left: 0px; text-decoration: none; margin-left: -5px; left: 8%; margin-top: -85px">
          <li><a href="" style="text-decoration: none;">👨🏽‍💻</a></li>
          <li><a href="https://github.com/AntonKanug" target="_blank" style="text-decoration: none;">💻</a></li>
          <li><a href="assets/AK-Resume.pdf" target="_blank" style="text-decoration: none;">📜 </a></li>
@@ -47,6 +49,7 @@
       </ul>
    </nav>
         </div>
+
   </header>
 
 
@@ -141,8 +144,10 @@
   var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("navbar").style.top = "0%";
+      document.getElementById("navbarM").style.top = "13%";
     } else {
       document.getElementById("navbar").style.top = "-90px";
+      document.getElementById("navbarM").style.top = "-90px";
     }
     prevScrollpos = currentScrollPos;
   }
