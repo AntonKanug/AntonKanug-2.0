@@ -1,50 +1,44 @@
-html{
+html {
   background-color: rgb(225, 238, 245);
 }
-body{
+body {
   background-size: cover;
   margin: auto;
   background-color: rgb(225, 238, 245);
 }
 
 /*Font*/
-@font-face
-{
+@font-face {
   src: url(fonts/SF-Pro-Display-Bold.otf);
   font-family: SFPro;
 }
-@font-face
-{
+@font-face {
   src: url(fonts/SF-Pro-Display-Regular.otf);
   font-family: SFProR;
 }
-@font-face
-{
+@font-face {
   src: url(fonts/SF-Pro-Display-Medium.otf);
   font-family: SFProM;
 }
-@font-face
-{
+@font-face {
   src: url(fonts/SF-Pro-Display-Heavy.otf);
   font-family: SFProH;
 }
-@font-face
-{
+@font-face {
   src: url(fonts/SF-Pro-Display-Light.otf);
   font-family: SFProL;
 }
-@font-face
-{
+@font-face {
   src: url(fonts/SF-Pro-Display-Black.otf);
   font-family: SFProBl;
 }
 
 
-nav{
+nav {
 background-color: #000;
 }
 
-.container{
+.container {
   background-color: #000;
 }
 
@@ -67,15 +61,12 @@ background-color: #000;
 
 @media (max-width:992px){
   .landingImg {
-    margin-top: 30px
+    margin-top: 12px
   }  
 }
 
-
-
 /*Name in the intro page*/
-.name
-{
+.name {
   font-family: SFPro;
   color: rgb(43,50,103);
   font-size: 65px;
@@ -140,8 +131,7 @@ background-color: #000;
 }
 
 /*Navigation menu hover effect*/
-nav ul li
-{
+nav ul li {
   font-family: SFPro;
   display: inline-block;
 }
@@ -211,8 +201,7 @@ nav ul li
   max-width: 100%;
 }
 
-.main_menu a:hover
-{
+.main_menu a:hover {
   color: rgb(63, 88, 177);
 }
 
@@ -223,6 +212,7 @@ nav ul li
 .landingDiv{
   margin-top: 20%
 }
+
 @media (max-width:768px){
   .main_menu{
     display: none
@@ -235,6 +225,7 @@ nav ul li
   }
 }
 
+/* Social Icons */
 
 .social-media-icon{
   transition: 0.3s;
