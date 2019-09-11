@@ -60,6 +60,22 @@ background-color: #000;
   margin-top: -10%
 }
 
+@keyframes float1 {
+	0% {
+		transform: translatey(5px);
+	}
+	50% {
+    transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(5px);
+	}
+}
+
+.projImg {
+  animation: float1 4.5s ease-in-out infinite;
+}
+
 @media (max-width:992px){
   .landingImg {
     margin-top: 12px
@@ -237,3 +253,13 @@ nav ul li {
 }
 
 
+
+@media  (max-width: 1400px) {
+  .img1 {
+      order: 2;
+  }
+  .text1 {
+      order: 1;
+  }
+
+}
