@@ -37,14 +37,22 @@
       </ul>
    </nav>
      <!--Ant logo-->
-
+     <nav>
+      <!--Navigation menu line and links-->
+        <ul class="main_menu main_menu-MOB" style="padding-left: 0px; text-decoration: none; margin-left: -5px; left: 8%; margin-top: 5px">
+         <li><a href="" style="text-decoration: none;">👨🏽‍💻</a></li>
+         <li><a href="https://github.com/AntonKanug" target="_blank" style="text-decoration: none;">💻</a></li>
+         <li><a href="assets/AK-Resume.pdf" target="_blank" style="text-decoration: none;">📜 </a></li>
+         <li><a href="#" style="text-decoration: none;">📬 </a></li>
+      </ul>
+   </nav>
         </div>
   </header>
 
 
   <body  style="background-color: rgb(225, 238, 245);"> 
 
-    <div data-aos="fade-up"  class="col-md-10 col-md-offset-1" style="margin-top: 20%">
+    <div data-aos="fade-up"  class="col-md-10 col-md-offset-1 landingDiv" >
         <!--Name in the inro page-->
         <div class="col-md-6" >
         <h4 class="name" style="font-size: 25px;line-height: 0.9">👋 Hey, my name is,</h4>
@@ -132,7 +140,7 @@
   window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-      document.getElementById("navbar").style.top = "0";
+      document.getElementById("navbar").style.top = "0%";
     } else {
       document.getElementById("navbar").style.top = "-90px";
     }
