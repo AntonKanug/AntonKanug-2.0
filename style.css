@@ -1,7 +1,10 @@
-body
-{
+html{
+  background-color: rgb(225, 238, 245);
+}
+body{
   background-size: cover;
   margin: auto;
+  background-color: rgb(225, 238, 245);
 }
 
 /*Font*/
@@ -45,21 +48,54 @@ background-color: #000;
   background-color: #000;
 }
 
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+    transform: translatey(-16px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.landingImg {
+	animation: float 4.5s ease-in-out infinite;
+}
+
 
 /*Name in the intro page*/
 .name
 {
   font-family: SFPro;
   color: rgb(43,50,103);
-  font-size: 53px;
+  font-size: 65px;
   font-weight: 900;
   margin-top: -6px
 }
 
+@media (max-width:1880px){
+  .name {
+  font-size: 55px;
+ }
+}
+
+@media (max-width:1680px){
+  .name {
+  font-size: 50px;
+ }
+}
+
+@media (max-width:1430px){
+  .name {
+  font-size: 40px;
+ }
+}
 /*Personal description*/
 .bio
 {
-  font-family: SFProR;
+  font-family: SFProL;
   color: rgb(75, 99, 187);
   font-weight: 400;
   font-size: 18px;
@@ -108,7 +144,7 @@ nav ul li
   transition: 0.2s;
   background:rgb(248, 247, 247);
   padding: 9px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .main_menu * {
   box-sizing: border-box;
@@ -149,7 +185,6 @@ nav ul li
 .main_menu a:after {
   left: 0;
   top: 0;
-  padding: 0.5em 0;
   position: absolute;
   content: attr(data-hover);
   color: #ffffff;
