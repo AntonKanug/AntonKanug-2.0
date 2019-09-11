@@ -230,6 +230,7 @@ nav ul li {
 
 .social-media-icon{
   transition: 0.3s;
+  margin: 6.25px
 }
 .social-media-icon:hover{
   transform: scale(1.25);
