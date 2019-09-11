@@ -61,8 +61,16 @@ background-color: #000;
 }
 
 .landingImg {
-	animation: float 4.5s ease-in-out infinite;
+  animation: float 4.5s ease-in-out infinite;
+  margin-top: -10%
 }
+
+@media (max-width:992px){
+  .landingImg {
+    margin-top: 30px
+  }  
+}
+
 
 
 /*Name in the intro page*/
