@@ -20,7 +20,14 @@
     <link rel="stylesheet" href="CSS/bootstrap.css" type="text/css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/6.6.0/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
   </head>
 
   <header id="nav-bar" style="width: 100%">
@@ -222,7 +229,7 @@
           <label for="email-address">Email Address</label>
           <input type="email" name="_replyto" id="email-address" placeholder="Enter Your Email" required="">
           <label for="company">Organization</label>
-          <input type="email" name="_replyto" id="company" placeholder="Enter Your Organization" required="">
+          <input type="text" name="company" id="company" placeholder="Enter Your Organization" required="">
           <label for="message">Message</label>
           <textarea rows="3" name="message" id="message" placeholder="Enter The Message Here" required=""></textarea>
           <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
