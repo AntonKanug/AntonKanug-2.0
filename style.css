@@ -263,3 +263,30 @@ nav ul li {
   }
 
 }
+#projects{
+  padding-top: 150px
+}
+
+@media (max-width:1900px){
+  #projects{
+    padding-top: 140px
+   }
+  }
+
+@media (max-width:1700px){
+#projects{
+  padding-top: 97px
+ }
+}
+
+@media (max-width:1500px){
+  #projects{
+    padding-top: 50px
+   }
+  }
+
+@media (max-width:768px){
+  #projects{
+    padding-top:11%
+    }
+  }
