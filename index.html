@@ -2,7 +2,6 @@
 <html>
 
   <head>
-    <script src="rellax.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="assets/antLogo.png">
@@ -11,7 +10,6 @@
     <title>Anton Kanugalawattage</title>
 
     <!--Link style.css to index.html-->
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
 
     <!-- Plugin CSS -->
@@ -30,8 +28,8 @@
     <nav>
       <!--Navigation menu line and links-->
         <ul class="main_menu" style="padding-left: 0px; text-decoration: none; margin-left: -5px">
-         <li><a href="" style="text-decoration: none;">👨🏽‍💻 Anton Kanugalawattage</a></li>
-         <li><a href="https://github.com/AntonKanug" target="_blank" style="text-decoration: none;">💻 Projects</a></li>
+         <li><a class="page-scroll" href="#" style="text-decoration: none;">👨🏽‍💻 Anton Kanugalawattage</a></li>
+         <li><a class="page-scroll" href="#projects" style="text-decoration: none;">💻 Projects</a></li>
          <li><a href="assets/AK-Resume.pdf" target="_blank" style="text-decoration: none;">📜 Resume</a></li>
          <li><a href="#" style="text-decoration: none;">📬 Contact</a></li>
       </ul>
@@ -42,8 +40,8 @@
       <div id="navbarM" class="container main_menu1"  style="position: fixed; transition: top 0.5s; margin-top: 15px; z-index: 1; ">
           <nav>
         <ul class="main_menu main_menu-MOB" style="padding-left: 0px; text-decoration: none; margin-left: -5px; left: 8%; margin-top: -85px">
-         <li><a href="" style="text-decoration: none;">👨🏽‍💻</a></li>
-         <li><a href="https://github.com/AntonKanug" target="_blank" style="text-decoration: none;">💻</a></li>
+         <li><a class="page-scroll" href="#" style="text-decoration: none;">👨🏽‍💻</a></li>
+         <li><a class="page-scroll" href="#projects" target="_blank" style="text-decoration: none;">💻</a></li>
          <li><a href="assets/AK-Resume.pdf" target="_blank" style="text-decoration: none;">📜 </a></li>
          <li><a href="#" style="text-decoration: none;">📬 </a></li>
       </ul>
@@ -53,16 +51,16 @@
   </header>
 
 
-  <body  style="background-color: rgb(225, 238, 245);"> 
-
-    <div data-aos="fade-up"  class="col-md-10 col-md-offset-1 landingDiv" >
+  <body style="background-color: rgb(225, 238, 245);"> 
+    <!--Home Page-->
+    <div data-aos="fade-up"  id="home" class="col-md-10 col-md-offset-1 landingDiv" >
         <!--Name in the inro page-->
         <div class="col-md-6" >
         <h4 class="name" style="font-size: 25px;line-height: 0.9">👋 Hey, my name is,</h4>
         <h1 class="name" style="line-height: 0.9" >Anton Kanugalawattage</h1>
         <!--Description in the intro page-->
         <h4 class="bio" style="margin-top: 10px; max-width: 90%;line-height: 1.25">📚 💻 Software Engineering Student, Lorem ipsum dolor sit amet consectetu Dolore dicta sed illo error quaerat dolorem consequuntur.</h4>
-        
+        <!--Contact Icons-->
         <ul class="list-inline" style="margin-top: 10px; background: rgb(248, 247, 247); border-radius: 15px; display: inline-block; margin-top: 5px; padding: 10px">
           <div class="social-media-icon"  style="  display: inline-block;">
           <li class="social-git">
@@ -85,9 +83,9 @@
           </li>
         </div>
         </ul>
-
       </div>
 
+      <!--Landing Img-->
         <div class="col-md-6 landingImg" >
             <img style="max-width: 100%" src="assets/img-landing.svg"/>
         </div>
@@ -95,9 +93,8 @@
    </div>
 
 
-
-
-   <div data-aos="fade-up"  class="col-md-10 col-md-offset-1" style="margin-top: 20%">
+  <!--Projects-->
+  <div data-aos="fade-up"  id="projects"  class="col-md-10 col-md-offset-1" style="padding-top: 10%; margin-top: 10%;">
     <!--Name in the inro page-->
     <div class="col-md-6" >
     <h4 class="name" style="font-size: 25px;line-height: 0.9">👋 Hey, my name is,</h4>
@@ -134,7 +131,80 @@
         <img style="max-width: 100%"src="assets/img-landing.svg"/>
     </div>
 
+     <!--Name in the inro page-->
+     <div class="col-md-6" >
+      <h4 class="name" style="font-size: 25px;line-height: 0.9">👋 Hey, my name is,</h4>
+      <h1 class="name" style="line-height: 0.9" >Anton Kanugalawattage</h1>
+      <!--Description in the intro page-->
+      <h4 class="bio" style="margin-top: 10px; max-width: 90%;line-height: 1.25">📚 💻 Software Engineering Student, Lorem ipsum dolor sit amet consectetu Dolore dicta sed illo error quaerat dolorem consequuntur.</h4>
+      
+      <ul class="list-inline" style="margin-top: 10px; background: rgb(248, 247, 247); border-radius: 15px; display: inline-block; margin-top: 5px; padding: 10px">
+        <div class="social-media-icon"  style="  display: inline-block;">
+        <li class="social-instagram">
+          <a href="https://github.com/AntonKanug" target="_blank"><img src="assets/github.svg" style="width:42px; height:42px; margin: 6.25px;"/></a>
+        </li>
+      </div>
+      <div class="social-media-icon"  style="  display: inline-block;"> 
+        <li class="social-twitter">
+          <a href="https://www.linkedin.com/in/antonkanug/" target="_blank"><img src="assets/linkedin.svg" style="width:42px; height:42px; margin: 6.25px;"/></a>
+        </li>
+      </div>
+      <div class="social-media-icon"  style="  display: inline-block;">
+        <li class="social-facebook">
+          <a href="assets/AK-Resume.pdf" target="_blank"><img src="assets/email.svg" style="width:42px; height:42px; margin: 6.25px;"/></a>
+        </li>
+      </div>
+      <div class="social-media-icon"  style="  display: inline-block;">
+        <li class="email">
+          <a href="assets/AK-Resume.pdf"  target="_blank"><img src="assets/cv.svg" style="width:42px; height:42px; margin: 6.25px;"/></a>
+        </li>
+      </div>
+      </ul>
+  
+    </div>
+  
+      <div class="col-md-6" style="margin-top: -10%">
+          <img style="max-width: 100%"src="assets/img-landing.svg"/>
+      </div>
+           <!--Name in the inro page-->
+     <div class="col-md-6" >
+      <h4 class="name" style="font-size: 25px;line-height: 0.9">👋 Hey, my name is,</h4>
+      <h1 class="name" style="line-height: 0.9" >Anton Kanugalawattage</h1>
+      <!--Description in the intro page-->
+      <h4 class="bio" style="margin-top: 10px; max-width: 90%;line-height: 1.25">📚 💻 Software Engineering Student, Lorem ipsum dolor sit amet consectetu Dolore dicta sed illo error quaerat dolorem consequuntur.</h4>
+      
+      <ul class="list-inline" style="margin-top: 10px; background: rgb(248, 247, 247); border-radius: 15px; display: inline-block; margin-top: 5px; padding: 10px">
+        <div class="social-media-icon"  style="  display: inline-block;">
+        <li class="social-instagram">
+          <a href="https://github.com/AntonKanug" target="_blank"><img src="assets/github.svg" style="width:42px; height:42px; margin: 6.25px;"/></a>
+        </li>
+      </div>
+      <div class="social-media-icon"  style="  display: inline-block;"> 
+        <li class="social-twitter">
+          <a href="https://www.linkedin.com/in/antonkanug/" target="_blank"><img src="assets/linkedin.svg" style="width:42px; height:42px; margin: 6.25px;"/></a>
+        </li>
+      </div>
+      <div class="social-media-icon"  style="  display: inline-block;">
+        <li class="social-facebook">
+          <a href="assets/AK-Resume.pdf" target="_blank"><img src="assets/email.svg" style="width:42px; height:42px; margin: 6.25px;"/></a>
+        </li>
+      </div>
+      <div class="social-media-icon"  style="  display: inline-block;">
+        <li class="email">
+          <a href="assets/AK-Resume.pdf"  target="_blank"><img src="assets/cv.svg" style="width:42px; height:42px; margin: 6.25px;"/></a>
+        </li>
+      </div>
+      </ul>
+  
+    </div>
+  
+      <div class="col-md-6" style="margin-top: -10%">
+          <img style="max-width: 100%"src="assets/img-landing.svg"/>
+      </div>
 </div>
+
+
+
 
 
 <!--Animate AOS-->
@@ -152,8 +222,8 @@
     prevScrollpos = currentScrollPos;
   }
   </script>
-
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script src="js/creative.js"></script>
  <script>
     AOS.init();
   </script>

@@ -1,4 +1,5 @@
 html {
+  scroll-behavior: smooth;
   background-color: rgb(225, 238, 245);
 }
 body {
