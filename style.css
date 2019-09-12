@@ -289,11 +289,13 @@ nav ul li {
   #projects, #contact{
     padding-top:150px;
     }
-  .proj-img{
-    margin-bottom: 30px
-   }
   }
-
+  @media (max-width:992px){
+    .proj-img{
+      margin-bottom: 30px
+     }
+  }
+  
 
   #fs-frm input,
 #fs-frm select,
