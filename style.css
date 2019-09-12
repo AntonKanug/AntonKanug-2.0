@@ -295,6 +295,10 @@ nav ul li {
   .proj-img{
     margin-bottom: 30px
     }
+  .text1{
+    max-width: 400px;
+    margin:auto
+    }
 }
   
 
@@ -390,12 +394,17 @@ nav ul li {
 #fs-frm fieldset.locale select[name="state"] {
   margin-right: 3%;
 }
-.contact-img{
-  margin-top: -40px
-}
 
+#contact{
+  margin-bottom: 40px
+}
 @media (max-width:992px){
   .contact-img{
     margin-top: 15px
     }
+    #contact{
+      margin-bottom: 10px
+    }
 }
+
+
