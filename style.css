@@ -290,14 +290,15 @@ nav ul li {
     padding-top:150px;
     }
   }
-  @media (max-width:992px){
-    .proj-img{
-      margin-bottom: 30px
-     }
-  }
+
+@media (max-width:992px){
+  .proj-img{
+    margin-bottom: 30px
+    }
+}
   
 
-  #fs-frm input,
+#fs-frm input,
 #fs-frm select,
 #fs-frm button,
 #fs-frm textarea,
@@ -388,4 +389,13 @@ nav ul li {
 #fs-frm fieldset.locale input[name="city"],
 #fs-frm fieldset.locale select[name="state"] {
   margin-right: 3%;
+}
+.contact-img{
+  margin-top: -40px
+}
+
+@media (max-width:992px){
+  .contact-img{
+    margin-top: 15px
+    }
 }
