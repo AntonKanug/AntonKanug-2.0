@@ -252,6 +252,13 @@ nav ul li {
   transform: scale(1.25);
 }
 
+.media-icon{
+  transition: 0.3s;
+  margin: 4.25px
+}
+.media-icon:hover{
+  transform: scale(1.25);
+}
 
 
 @media  (max-width: 1400px) {
@@ -263,30 +270,30 @@ nav ul li {
   }
 
 }
-#projects, #contact{
+#projects, #contact, #skills, #education, #experience{
   padding-top: 150px
 }
 
 @media (max-width:1900px){
-  #projects, #contact{
+  #projects, #contact, #skills, #education, #experience{
     padding-top: 140px
    }
   }
 
 @media (max-width:1700px){
-  #projects, #contact{
+  #projects, #contact, #skills, #education, #experience{
   padding-top: 97px
  }
 }
 
 @media (max-width:1500px){
-  #projects, #contact{
+  #projects, #contact, #skills, #education, #experience{
     padding-top: 50px
    }
   }
 
 @media (max-width:768px){
-  #projects, #contact{
+  #projects, #contact, #skills, #education, #experience{
     padding-top:150px;
     }
   }
