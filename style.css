@@ -243,10 +243,19 @@ nav ul li {
 }
 
 /* Social Icons */
+.tooltip.top .tooltip-inner {
+  background-color:  rgb(39, 49, 83)  ;
+  font-family: SFProR;
+}
+
+.tooltip .tooltip-arrow {
+  border-top: 5px solid rgb(39, 49, 83) !important;
+  transform: scale(1.18);
+}
 
 .social-media-icon{
   transition: 0.3s;
-  margin: 6.25px
+  margin: 6.25px;
 }
 .social-media-icon:hover{
   transform: scale(1.25);
@@ -254,8 +263,9 @@ nav ul li {
 
 .media-icon{
   transition: 0.3s;
-  margin: 4.25px
+  margin: 4.25px;
 }
+
 .media-icon:hover{
   transform: scale(1.25);
 }
@@ -404,4 +414,3 @@ nav ul li {
       margin-bottom: 10px
     }
 }
-
