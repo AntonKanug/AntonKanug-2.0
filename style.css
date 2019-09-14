@@ -260,16 +260,6 @@ nav ul li {
   transform: scale(1.25);
 }
 
-
-@media  (max-width: 1400px) {
-  .img1 {
-      order: 2;
-  }
-  .text1 {
-      order: 1;
-  }
-
-}
 #projects, #contact, #skills, #education, #experience{
   padding-top: 150px
 }
@@ -405,6 +395,7 @@ nav ul li {
 #contact{
   margin-bottom: 40px
 }
+
 @media (max-width:992px){
   .contact-img{
     margin-top: 15px
@@ -413,5 +404,4 @@ nav ul li {
       margin-bottom: 10px
     }
 }
-
 
