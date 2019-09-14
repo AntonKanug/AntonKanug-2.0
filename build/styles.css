@@ -1,0 +1,627 @@
+@charset "UTF-8";
+
+:root {
+	--dur: 1s;
+}
+
+body,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+hr,
+html,
+li,
+p,
+small {
+	margin: 0
+}
+button,
+fieldset,
+img {
+	border: none
+}
+
+body,
+html {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none
+}
+
+:not(body) {
+	background-repeat: no-repeat
+}
+
+html {
+	-webkit-font-smoothing: antialiased
+}
+
+a {
+	text-decoration: none
+}
+
+a,
+button {
+	outline: 0;
+}
+
+button {
+	outline: 0;
+	display: block;
+	background-color: transparent;
+	color: #f7f7f7;
+	margin-top: 10px;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	font: 200 30px/1.5 "Maison Neue";
+	-webkit-tap-highlight-color: transparent
+}
+.tippy-tooltip {
+  	font: 200 20px/1.5 "Maison Neue";
+}
+
+.ind {
+	display: inline-block;
+	margin-top: 5px;
+}
+
+body {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0
+}
+
+body {
+	text-rendering: optimizeLegibility
+}
+
+html {
+	box-sizing: border-box;
+	border-collapse: collapse;
+	line-height: 1;
+	-moz-osx-font-smoothing: grayscale
+}
+
+* {
+	border-collapse: inherit
+}
+
+*,
+:after,
+:before {
+	box-sizing: inherit
+}
+
+:not(body) {
+	background-position: 50%;
+	background-size: cover
+}
+
+body,
+html {
+	padding: 0
+}
+
+menu,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+li,
+p,
+small {
+	padding: 0
+}
+
+a {
+	color: inherit
+}
+
+fieldset {
+	padding: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: 400
+}
+
+hr {
+	border: 0
+}
+
+button {
+	padding: 0
+}
+
+.u-fullParent {
+	width: 100%;
+	height: 100%
+}
+
+.u-fullParent {
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+@font-face {
+	font-family: "IBM Plex Mono";
+	src: url('../assets/fonts/IBMPlexMono-Light.ttf');
+	font-style: normal;
+	font-weight: 400
+}
+
+@font-face {
+	font-family: "Maison Neue Mono";
+	src: url('../assets/fonts/AvenirLTStd-Light.otf');
+	/*src: url('../assets/fonts/Maison%20Neue%20Monod41d.eot?#iefix') format("embedded-opentype"), url('../assets/fonts/Maison%20Neue%20Mono.woff') format("woff"), url('../assets/fonts/Maison%20Neue%20Mono.ttf') format("truetype"), url('../assets/fonts/Maison%20Neue%20Mono.svg#af2fa94b953e46dc77e59983b9e9c303') format("svg");*/
+	font-style: normal;
+	font-weight: 400
+}
+
+@font-face {
+	font-family: "Maison Neue";
+	src: url('../assets/fonts/AvenirLTStd-Light.otf');
+	/*src: url('../assets/fonts/Maison%20Neue%20Lightd41d.eot?#iefix') format("embedded-opentype"), url('../assets/fonts/Maison%20Neue%20Light.woff') format("woff"), url('../assets/fonts/Maison%20Neue%20Light.ttf') format("truetype"), url('../assets/fonts/Maison%20Neue%20Light.svg#6f121ab30e14cbd298b48f56c3575fb7') format("svg");*/
+	font-style: normal;
+	font-weight: 200
+}
+
+@font-face {
+	font-family: "Maison Neue";
+	src: url('../assets/fonts/AvenirLTStd-Light.otf');
+	/*src: url('../assets/fonts/Maison%20Neue%20Mediumd41d.eot?#iefix') format("embedded-opentype"), url('../assets/fonts/Maison%20Neue%20Medium.woff') format("woff"), url('../assets/fonts/Maison%20Neue%20Medium.ttf') format("truetype"), url('../assets/fonts/Maison%20Neue%20Medium.svg#751d4e146592611362c6dd26f9bc3016') format("svg");*/
+	font-style: normal;
+	font-weight: 400
+}
+
+@font-face {
+	font-family: "Maison Neue";
+	src: url('../assets/fonts/AvenirLTStd-Light.otf');
+	/*src: url('../assets/fonts/Maison%20Neue%20Demid41d.eot?#iefix') format("embedded-opentype"), url('../assets/fonts/Maison%20Neue%20Demi.woff') format("woff"), url('../assets/fonts/Maison%20Neue%20Demi.ttf') format("truetype"), url('../assets/fonts/Maison%20Neue%20Demi.svg#83e42244382055676967b9123edd6fa4') format("svg");*/
+	font-style: normal;
+	font-weight: 600
+}
+
+@font-face {
+	font-family: "Maison Neue";
+	src: url('../assets/fonts/AvenirLTStd-Light.otf');
+	/*src: url('../assets/fonts/Maison%20Neue%20Boldd41d.eot?#iefix') format("embedded-opentype"), url('../assets/fonts/Maison%20Neue%20Bold.woff') format("woff"), url('../assets/fonts/Maison%20Neue%20Bold.ttf') format("truetype"), url('../assets/fonts/Maison%20Neue%20Bold.svg#d7515c8903f80839201eea94ef008f5e') format("svg");*/
+	font-style: normal;
+	font-weight: 700
+}
+
+@font-face {
+	font-family: "Maison Neue r";
+	src: url('../assets/fonts/Maison Neue Demi.ttf');
+	font-style: normal;
+	font-weight: 400
+}
+
+.App,
+body {
+	background-size: 40px 40px;
+	/*background-image: radial-gradient(circle, #000 1px, rgba(0, 0, 0, 0) 1px);*/
+	background: #fff;
+	overflow-y: auto;
+	color: #f7f7f7;
+}
+
+.App .Terminal {
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	height: 40vh;
+	width: 40vw;
+	background-color: #313131;
+	padding: 30px;
+	color: #fff;
+	font-size: 14px;
+	font-family: 'IBM Plex Mono';
+	right: 0;
+	top: 0;
+
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-transition: right .5s cubic-bezier(.4, 0, .43, 1.24) 0s;
+	-o-transition: right .5s cubic-bezier(.4, 0, .43, 1.24) 0s;
+	transition: right .5s cubic-bezier(.4, 0, .43, 1.24) 0s
+}
+
+@media screen and (max-width:768px) {
+	.App .Terminal {
+		display: none
+	}
+}
+
+.App .Terminal .prompt {
+	color: #fed1be
+}
+
+.App .Terminal .output {
+	color: #abe1fd
+}
+
+.App .Terminal .cursor {
+	width: 8px;
+	height: 16px;
+	margin-bottom: -4px;
+	display: inline-block;
+	background-color: hsla(40, 6%, 90%, .7)
+}
+
+
+
+body,
+html {
+	width: 100%;
+	user-select: none
+}
+
+body {
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	position: fixed;
+	font: 200 30px/1.5 "Maison Neue";
+	-webkit-tap-highlight-color: transparent
+}
+
+.Content,
+h1,
+label,
+ul,
+ul li {
+	margin-top: 10px;
+	display: block
+}
+
+.Content {
+	position: relative;
+	top: 20%;
+	padding-bottom: 10%;
+	max-width: 60%;
+	margin: auto
+}
+
+.Content > h1 {
+	top: 50%;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+
+a:not(.Disabled):after,
+ul li a>span:after {
+	content: '';
+	top: 13px;
+	width: 90%;
+	height: 15px
+}
+
+h1 {
+	font: 700 30vh/1 "Maison Neue";
+	text-align: right;
+	letter-spacing: -.03em
+}
+
+label {
+	font: 200 15px "IBM Plex Mono";
+	color: #696969;
+	letter-spacing: .2rem;
+	/*text-transform: uppercase;*/
+	/*border: 1px solid #000;
+  	border-radius: 0;
+  	box-shadow: -4px 4px 0px 0px;
+    padding: 16px;*/
+	margin: 80px 0 30px;
+}
+
+ul {
+	margin-top: 20px
+}
+
+ul li a > span {
+	display: inline-block;
+	position: relative
+}
+
+ul li a > span:after {
+	display: block;
+	position: absolute;
+	background: rgba(255, 255, 255, .4);
+	-webkit-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform-origin: right center;
+	-ms-transform-origin: right center;
+	transform-origin: right center;
+	transition: .55s -webkit-transform cubic-bezier(.19, 1, .22, 1);
+	transition: .55s transform cubic-bezier(.19, 1, .22, 1)
+}
+
+p {
+	font: 200 16px/2 "Maison Neue"
+}
+
+p b {
+	font-weight: 400
+}
+
+p span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px
+}
+
+p a {
+	font-weight: 600
+}
+
+.Disabled {
+	color: #f7f7f7;
+	flex: 1;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #696969 0, #696969 100%);
+    background-position: 0 1.2em;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background 0.2s;
+}
+
+.Disabled:hover {
+	background-size: 100% 100%;
+	clip: rect(10px, 20px, 30px, 40px);
+}
+
+.Disabled {
+	background-position: 0 0.2em;
+}
+
+#emoji {
+	display: inline;
+}
+
+#intro {
+	display: inline;
+}
+
+#intro-love {
+	display: inline;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #696969;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #000;
+}
+
+
+/** {
+	cursor: none;
+}
+*/
+.dot {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: 50%;
+	left: 50%;
+	background: rgb(90, 84, 255);
+	border-radius: 40px;
+	transition: ease .1s;
+	pointer-events: none;
+}
+
+.dot:nth-child(1) {
+	background: rgba(90, 84, 255, 0.1);
+	transition: ease .2s;
+	transform: scale(4);
+}
+
+.overlay:before {
+    animation: grain 1s steps(10) infinite;
+    background-image: /*url(../assets/images/grains.png);*/ url(http://api.thumbr.it/whitenoise-361x370.png?background=000000ff&noise=ffffff&density=61&opacity=11);
+    content: "";
+    height: 302%;
+    left: -45%;
+    opacity: 1;
+    position: fixed;
+    top: -120%;
+    width: 300%;
+}
+
+@keyframes grain {
+    0%, 100% { transform: translate(0, 0); }
+    10% { transform: translate(-5%, -10%); }
+    20% { transform: translate(-15%, 5%);  }
+    30% { transform: translate(7%, -25%);  }
+    40% { transform: translate(-5%, 25%);  }
+    50% { transform: translate(-15%, 10%); }
+    60% { transform: translate(15%, 0%);   }
+    70% { transform: translate(0%, 15%);   }
+    80% { transform: translate(3%, 35%);   }
+    90% { transform: translate(-10%, 10%); }
+}
+
+.scanlines {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 300;
+  opacity: 0.3;
+  animation: opacity 3s linear infinite;
+}
+
+.scanlines:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
+  background-size: 100% 4px;
+  animation: scanlines 0.2s linear infinite;
+}
+
+@keyframes scanlines {
+  from {
+    background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
+		background-size: 100% 4px;
+  }
+  to {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 50%, transparent 51%);
+		background-size: 100% 4px;
+  }
+}
+
+.Stagger.hidden {
+    animation: fadeOut 0.3s;
+    animation-fill-mode: forwards;
+}
+
+/*.loader {
+	animation: moveUp 2s ease-in;
+	font-family: "Maison Neue";
+	font-size: 15px;
+	letter-spacing: .5rem;
+	color: white;
+	position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader .a {
+	color: white;
+}
+
+.loader .b {
+	color: gray;
+}
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}*/
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	15% {
+		opacity: 0;
+
+	}
+	45% {
+		opacity: 1;
+
+	}
+	75% {
+		opacity: 0;
+
+	}
+    100% {
+        opacity: 1;
+    }
+}
+
+/*
+@keyframes moveUp {
+	0% {
+		transform: translateY(0)
+	}
+
+    100% {
+        transform: translateY(-250)
+    }
+}*/
+
+
+/*#main {
+  transform: translate(0%, 0%);
+  margin: 0;
+  text-decoration: none;
+  color: #000;
+/*  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(90, 84, 255);*/
+}
+
+/*#main:before, #main:after {
+  display: block;
+  content: attr(cont-str);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
+
+#main:after {
+  color: #f0f;
+  z-index: -2;
+}
+#main:before {
+  color: #0ff;
+  z-index: -1;
+}
+#main:hover:before {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+#main:hover:after {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0)
+    }
+    20% {
+        transform: translate(-2px, 2px)
+    }
+    40% {
+        transform: translate(-2px, -2px)
+    }
+    60% {
+        transform: translate(2px, 2px)
+    }
+    80% {
+        transform: translate(2px, -2px)
+    }
+    to {
+        transform: translate(0)
+    }
+}*/

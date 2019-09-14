@@ -1,9 +1,10 @@
 <!doctype html>
-<html>
+<html id="App-main">
 
   <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Anton Kanugalawattage,Anton Kanug,Anton, Kanugalawattage">
+    <meta name="keywords" content="Anton Kanugalawattage,Anton Kanug,Anton, Kanugalawattage">\
+    <meta name="description" content="Anton Kanugalawattage - Budding Computer Scientist from Canada."/>
     <meta name="author" content="Anton Kanugalawattage, Anton Kanug">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -23,6 +24,12 @@
     <link rel="stylesheet" href="CSS/bootstrap.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script src="build/t.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+	  <script src="build/tippy.js"></script>
+
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -68,12 +75,15 @@
   </header>
 
 
-  <body style="background-color: rgb(225, 238, 245);"> 
+  <body style="background-color: rgb(225, 238, 245);"  > 
+    <div id="App-main">
     <!--Home Page-->
-    <div data-aos="fade-up"  id="home" class="col-md-10 col-md-offset-1 landingDiv" >
+    <div data-aos="fade-up"  id=" home" class="col-md-10 col-md-offset-1 landingDiv App u-fullParent overlay loading" >
+        
         <!--Name in the inro page-->
         <div class="col-md-6" >
-        <h4 class="name" style="font-size: 25px;line-height: 0.9">👋 Hey, my name is,</h4>
+        <div id="emoji" style="font-size: 27px; display: inline-block">👋</div>
+        <h4 class="name" style="font-size: 25px;line-height: 0.9; display: inline-block">Hey, my name is,</h4>
         <h1 class="name" style="line-height: 0.9 " >Anton Kanugalawattage</h1>
         <!--Description in the intro page-->
         <h4 class="bio" style="margin-top: 10px; max-width: 90%;line-height: 1.25">📚 💻 Software Engineering Student, Lorem ipsum dolor sit amet consectetu Dolore dicta sed illo error quaerat dolorem consequuntur.</h4>
@@ -462,7 +472,7 @@
   </div>
 
 </div>
-
+</div>
 <!-- <footer>
   <div class="container" style="height: 0px">
     <p class="name ccFooter" style="font-weight: 300; text-align: center; margin-bottom: 40px; font-family: SFProR; font-size:15px">&copy; 2019 Anton Kanugalawattage. All Rights Reserved.</p>
@@ -524,5 +534,24 @@
       $('[data-toggle="tooltip"]').tooltip();   
     });
     </script>
+    <script>
+        new Tippy('.tippy', { followCursor: true, position: 'right', duration: 0 })
+        </script>
+       <script>	
+        var emojis = ["👋","❤️","🍇","🍈","🍉","🍊","🍋","🍌","🍍","🍎","🍏","🍐","🍑","🍒","🍓",
+          "😺","😸","😹","😻","😼","😽","🙀","😿","😾","🙈","🙉","🐵","🐒","🦍","🐶","🐕","🐩","🐺","🦊","🐱","🐈","🦁","🐯","🐅","🐆","🐴","🐎","🦄","🦌","🐮","🐂","🐃","🐄","🐷","🐖","🐗","🐽","🐏","🐑","🐐","🐪","🐫","🐘","🦏","🐹","🐰","🐇","🐿","🐻","🐨","🐼","🐾","🦃","🐔","🐓","🐣","🐤","🐥","🐦","🐧","🦅","🦆","🦉","🐸","🐊","🐢","🐲","🐉","🐳","🐬","🐟","🐠","🐡","🦈","🐙","🐚","🦀","🦐","🦑","🐌","🦋","✌","😂","😝","😁","😱","👉","🙌","🍻","🔥","🌈","☀","🎈","🌹","💄","🎀","⚽","🎾","🏁","😡","👿","🐻","🐶","🐬","🐟","🍀","👀","🚗","🍎","💝","💙","👌","❤","😍","😉","😓","😳","💪","💩","🍸","🔑","💖","🌟","🎉","🌺","🎶","👠","🏈","⚾","🏆","👽","💀","🐵","🐮","🐩","🐎","💣","👃","👂","🍓","💘","💜","👊","💋","😘","😜","😵","🙏","👋","🚽","💃","💎","🚀","🌙","🎁","⛄","🌊","⛵","🏀","🎱","💰","👶","👸","🐰","🐷","🐍","🐫","🔫","👄","🚲","🍉","💛","💚","🎹","✎"];
+        var scrollTime = 0.9; //Scroll time
+        var scrollDistance = 90;
+        $('#App-main').bind('mousewheel', function(e){
+          var idx = Math.floor(Math.random() * emojis.length);
+         
+          document.getElementById("emoji").innerHTML = emojis[idx];
+          
+          var delta = e.originalEvent.wheelDelta/120 || -e.originalEvent.detail/3;
+          var scrollTop = $('#App-main').scrollTop();
+          var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+          
+         });
+        </script>
   </body>
 </html>
